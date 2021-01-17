@@ -13,7 +13,7 @@
   </title>
   <meta name="generator" content="hexo-theme-ayer">
   
-  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="shortcut icon" href="/images/1.png" />
   
   
 <link rel="stylesheet" href="/dist/main.css">
@@ -100,7 +100,7 @@ var _hmt = _hmt || [];
     <div class="article-entry" itemprop="articleBody">
        
   <div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉, 这个密码看着不太对, 请再试试." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="5f171407c79417605b1019dfa5a0df09970d65e7ebd5ab9b25334fe670a520ee">165d50f05814027fb7fe5e4ae8a088d8f56f9f99da4d666013e31ffb8bb0171fc7fb7e123a0dbdaace91d8f5befd348f68f3bcc4e96bdfebb15056a3980290f29c0c120b90ffb0cebc9c31a4d04c449736356c55b2d7373006ea60b2b254a672740e83f89b3c70817f925dad9048b6b6b1fc574cd4458bcf86b4ed6499fb3c4917e412d204a7e73de96aa06688e45d953d7749b7af00e9bd1af4bcbfb52c4c6db0c4779762facd60dac52625ee402bed23dd3b0f0f0345ac5f46272612607a94dbf19836afda7be5e91e19bf3cf903e26df99492abe24a2384bdc217f10573d2c2195926f46b9c68d8606e643286f6d65ce352ef193e370b92de92d4c03c3918df2b497393ad68e28eb3bb4f59e0db2d9aa7f8767ce9b7dda746931553c9ba219b325a3668892ff83ce425560688e0e17169b5da494e1c892d22a81963cde319ec3ce490ac8495596e4a9d117a393dca59a8a45365641ae2f5fd2063f8f7fff0d15ef9a41f1f0271205189ff823ac76d8545d0bcbd46a7b0c5b3c3b7e838ac5abf9d0f6f17eba33f94a6daa6e905f1b40d08ef9e855bfcb7704ce4ce6895a14d50acad85d0ca743304c0957cba1b8356b55c12d8a16a6c2bf9624f666244f828a2dd53ac2d2c93c91dc650ce542f80a5bae827f28996fb9d4fe642a2e554e33bbdf15be917ae65e1f36106f79df7225a9e0e08746b9ac96aab0b101b636a290c534f62cf1404ce906fbb146680556c3a</script>
+  <script id="hbeData" type="hbeData" data-hmacdigest="e17f36d98b540a418ac8308aa532834b3683a8aea7ffedebdb1c5fb35c8ea250">0201ff0e849979088ebc66e89713749ccb6a286cdaf622c4f00e08ed7515fbb4defb7843ce57961a6c32fde49865c5fa00f8508515dc9e4242deb20e041618576be2c17c4d5bb6affdcd083f2564b465b953a5d6f10ef17df163730d0fb61ec9b467c9a90714e508c2f9fa8aac831f57019b0cb47b4db382493f9d54b89ee872a1199f798b5e507bad1bb21a19a8b95ff85a477d6492387e9566b1febddd1065b71e26491362cadc6ebeda6fae67bf18cbae80a030504c376bbb3cb30298f78a8d9f523f94b22e9633193d6ab14e429c2e15995cd4eedd5f1188e41560392e3f387bec03bbf646ce4cc2742db698cb283994096727aeb58665d8497d3a6061d8555e53ec22a3af989f6759f8d399de3001da8d0d904f4ce6af888f4f1f30506525f6f5ec132af8ed4b7a2b97368d932191ab46be2e81ab374b3e41cf404749cabe3ff807b363094216c39825b115c17c49018663a6d9abc3ed0eda39f577a0466401eabd0c74e5a1278e0689a70c61b4997c040d9c9732a981707de437b5d9d5535b065a20b3a5d2132d6086c6960113</script>
   <div class="hbe hbe-content">
     <div class="hbe hbe-input hbe-input-default">
       <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
@@ -175,11 +175,11 @@ var _hmt = _hmt || [];
    
   <nav class="article-nav">
     
-      <a href="/2021/01/13/jottings/" class="article-nav-link">
+      <a href="/2021/01/13/jottings-1/" class="article-nav-link">
         <strong class="article-nav-caption">上一篇</strong>
         <div class="article-nav-title">
           
-            随笔
+            关于搭建博客的一系列问题
           
         </div>
       </a>
@@ -193,6 +193,53 @@ var _hmt = _hmt || [];
   </nav>
 
    
+<!-- valine评论 -->
+<div id="vcomments-box">
+  <div id="vcomments"></div>
+</div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js"></script>
+<script>
+  new Valine({
+    el: "#vcomments",
+    app_id: "",
+    app_key: "",
+    path: window.location.pathname,
+    avatar: "monsterid",
+    placeholder: "给我的文章加点评论吧~",
+    recordIP: true,
+  });
+  const infoEle = document.querySelector("#vcomments .info");
+  if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0) {
+    infoEle.childNodes.forEach(function (item) {
+      item.parentNode.removeChild(item);
+    });
+  }
+</script>
+<style>
+  #vcomments-box {
+    padding: 5px 30px;
+  }
+
+  @media screen and (max-width: 800px) {
+    #vcomments-box {
+      padding: 5px 0px;
+    }
+  }
+
+  #vcomments-box #vcomments {
+    background-color: #fff;
+  }
+
+  .v .vlist .vcard .vh {
+    padding-right: 20px;
+  }
+
+  .v .vlist .vcard {
+    padding-left: 10px;
+  }
+</style>
+
  
    
      
@@ -261,7 +308,7 @@ var _hmt = _hmt || [];
 <nav class="navbar">
   
   <div class="logo">
-    <a href="/"><img src="/images/ayer-side.svg" alt="Hubert&#39;s Blog"></a>
+    <a href="/"><img src="/images/ayer.svg" alt="Hubert&#39;s Blog"></a>
   </div>
   
   <ul class="nav nav-main">
@@ -584,6 +631,6 @@ var _hmt = _hmt || [];
 
     
   </div>
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"scale":1,"hHeadPos":0.5,"vHeadPos":0.618,"jsonPath":"/live2dw/assets/assets/hijiki.model.json"},"display":{"superSample":2,"width":175,"height":350,"position":"right","hOffset":75,"vOffset":-75},"mobile":{"show":true,"scale":0.5},"react":{"opacityDefault":0.7,"opacityOnHover":0.2},"log":false});</script></body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"scale":1,"hHeadPos":0.5,"vHeadPos":0.618,"jsonPath":"/live2dw/assets/assets/hijiki.model.json"},"display":{"superSample":2,"width":175,"height":350,"position":"right","hOffset":75,"vOffset":-75},"mobile":{"show":false,"scale":0.5},"react":{"opacityDefault":0.7,"opacityOnHover":0.2},"log":false});</script></body>
 
 </html>

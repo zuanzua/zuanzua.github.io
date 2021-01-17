@@ -162,7 +162,7 @@
     <title>私密</title>
     <url>/2021/01/13/private/</url>
     <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉, 这个密码看着不太对, 请再试试." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="5f171407c79417605b1019dfa5a0df09970d65e7ebd5ab9b25334fe670a520ee">165d50f05814027fb7fe5e4ae8a088d8f56f9f99da4d666013e31ffb8bb0171fc7fb7e123a0dbdaace91d8f5befd348f68f3bcc4e96bdfebb15056a3980290f29c0c120b90ffb0cebc9c31a4d04c449736356c55b2d7373006ea60b2b254a672740e83f89b3c70817f925dad9048b6b6b1fc574cd4458bcf86b4ed6499fb3c4917e412d204a7e73de96aa06688e45d953d7749b7af00e9bd1af4bcbfb52c4c6db0c4779762facd60dac52625ee402bed23dd3b0f0f0345ac5f46272612607a94dbf19836afda7be5e91e19bf3cf903e26df99492abe24a2384bdc217f10573d2c2195926f46b9c68d8606e643286f6d65ce352ef193e370b92de92d4c03c3918df2b497393ad68e28eb3bb4f59e0db2d9aa7f8767ce9b7dda746931553c9ba219b325a3668892ff83ce425560688e0e17169b5da494e1c892d22a81963cde319ec3ce490ac8495596e4a9d117a393dca59a8a45365641ae2f5fd2063f8f7fff0d15ef9a41f1f0271205189ff823ac76d8545d0bcbd46a7b0c5b3c3b7e838ac5abf9d0f6f17eba33f94a6daa6e905f1b40d08ef9e855bfcb7704ce4ce6895a14d50acad85d0ca743304c0957cba1b8356b55c12d8a16a6c2bf9624f666244f828a2dd53ac2d2c93c91dc650ce542f80a5bae827f28996fb9d4fe642a2e554e33bbdf15be917ae65e1f36106f79df7225a9e0e08746b9ac96aab0b101b636a290c534f62cf1404ce906fbb146680556c3a</script>
+  <script id="hbeData" type="hbeData" data-hmacdigest="e17f36d98b540a418ac8308aa532834b3683a8aea7ffedebdb1c5fb35c8ea250">0201ff0e849979088ebc66e89713749ccb6a286cdaf622c4f00e08ed7515fbb4defb7843ce57961a6c32fde49865c5fa00f8508515dc9e4242deb20e041618576be2c17c4d5bb6affdcd083f2564b465b953a5d6f10ef17df163730d0fb61ec9b467c9a90714e508c2f9fa8aac831f57019b0cb47b4db382493f9d54b89ee872a1199f798b5e507bad1bb21a19a8b95ff85a477d6492387e9566b1febddd1065b71e26491362cadc6ebeda6fae67bf18cbae80a030504c376bbb3cb30298f78a8d9f523f94b22e9633193d6ab14e429c2e15995cd4eedd5f1188e41560392e3f387bec03bbf646ce4cc2742db698cb283994096727aeb58665d8497d3a6061d8555e53ec22a3af989f6759f8d399de3001da8d0d904f4ce6af888f4f1f30506525f6f5ec132af8ed4b7a2b97368d932191ab46be2e81ab374b3e41cf404749cabe3ff807b363094216c39825b115c17c49018663a6d9abc3ed0eda39f577a0466401eabd0c74e5a1278e0689a70c61b4997c040d9c9732a981707de437b5d9d5535b065a20b3a5d2132d6086c6960113</script>
   <div class="hbe hbe-content">
     <div class="hbe hbe-input hbe-input-default">
       <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
@@ -175,29 +175,6 @@
 <script src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
       <tags>
         <tag>私密</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>随笔</title>
-    <url>/2021/01/13/jottings/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="bolg操作">bolg操作</h2>
-<h3 id="在sourse的-posts下创建-md">在sourse的-posts下创建 .md</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo n <span class="string">&quot;filename&quot;</span></span><br></pre></td></tr></table></figure>
-<a id="more"></a>
-<h3 id="在sourse下建一个文件-默认有index-md">在sourse下建一个文件(默认有index .md)</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo n page <span class="string">&quot;filename&quot;</span></span><br></pre></td></tr></table></figure>
-<h3 id="在本地运行服务器">在本地运行服务器</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo s                          \\http://localhost:4000/ s是server</span><br><span class="line">hexo s -p 5555                  \\http://localhost:5555/</span><br></pre></td></tr></table></figure>
-<h3 id="生成静态文件">生成静态文件</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo g                          \\g是generate</span><br></pre></td></tr></table></figure>
-<h3 id="部署到远程站点">部署到远程站点</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo d                          \\d是deploy</span><br></pre></td></tr></table></figure>
-<h2 id="获取任意网站的图标">获取任意网站的图标</h2>
-<p><code>https://url/favicon.ico</code><br>
-eg:百度图标 <a href="https://www.baidu.com/favicon.ico">https://www.baidu.com/favicon.ico</a></p>
-]]></content>
-      <tags>
-        <tag>-随笔 -技术</tag>
       </tags>
   </entry>
   <entry>
@@ -220,6 +197,62 @@ eg:百度图标 <a href="https://www.baidu.com/favicon.ico">https://www.baidu.co
       </categories>
       <tags>
         <tag>示例</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>关于搭建博客的一系列问题</title>
+    <url>/2021/01/13/jottings-1/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="bolg操作">bolg操作</h2>
+<h3 id="在sourse的-posts下创建-md">在sourse的-posts下创建 .md</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo n <span class="string">&quot;filename&quot;</span></span><br></pre></td></tr></table></figure>
+<a id="more"></a>
+<h3 id="在sourse下建一个文件-默认有index-md">在sourse下建一个文件(默认有index .md)</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo n page <span class="string">&quot;filename&quot;</span></span><br></pre></td></tr></table></figure>
+<h3 id="在本地运行服务器">在本地运行服务器</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo s                          \\http://localhost:4000/ s是server</span><br><span class="line">hexo s -p 5555                  \\http://localhost:5555/</span><br></pre></td></tr></table></figure>
+<h3 id="生成静态文件">生成静态文件</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo g                          \\g是generate</span><br></pre></td></tr></table></figure>
+<h3 id="部署到远程站点">部署到远程站点</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo d                          \\d是deploy</span><br></pre></td></tr></table></figure>
+<hr>
+<h2 id="获取任意网站的图标">获取任意网站的图标</h2>
+<p><code>https://url/favicon.ico</code><br>
+eg:百度图标 <a href="https://www.baidu.com/favicon.ico">https://www.baidu.com/favicon.ico</a></p>
+<hr>
+<h2 id="博客本地图片无法引用问题">博客本地图片无法引用问题</h2>
+<h3 id="一-：打开博客下的-config-yml文件修改成如下">（一）：打开博客下的_config.yml文件修改成如下</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">post_asset_folder: <span class="literal">true</span></span><br><span class="line">//原默认为post_asset_folder: <span class="literal">false</span></span><br></pre></td></tr></table></figure>
+<p>修改为true后，在使用<code>hexo n &quot;filename&quot;</code>建立文件时，Hexo会自动建立一个与文章同名的文件夹，这样就可以把与该文章相关的所有资源（图片）都放到那个文件夹里方便后面引用。</p>
+<h3 id="二-：正确的引用图片方式是使用下列的标签插件而不是-markdown">（二）：正确的引用图片方式是使用下列的标签插件而不是 markdown</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">&#123;% asset_img example.jpg This is an example image %&#125; </span><br><span class="line">\\example.jpg就是要引用的图片，后面的This is an example image是图片描述，可以自己修改</span><br></pre></td></tr></table></figure>
+<hr>
+<h2 id="本地项目上传到github">本地项目上传到Github</h2>
+<h3 id="第一步：在自己的github上创建一个仓库">第一步：在自己的github上创建一个仓库</h3>
+<img src="/2021/01/13/jottings-1/1.jpg" class=""> 
+<img src="/2021/01/13/jottings-1/4.jpg" class=""> 
+<h3 id="第二步：在要上传的项目右键选择git-bash-here">第二步：在要上传的项目右键选择Git Bash Here</h3>
+<img src="/2021/01/13/jottings-1/2.jpg" class="">
+<h3 id="第三步：输入命令git-init">第三步：输入命令git init</h3>
+<p>把这个文件夹变成Git可管理的仓库，这时你会发现qwer里面多了个.git文件夹，它是Git用来跟踪和管理版本库的。如果你看不到，是因为它默认是隐藏文件，需要在查看中把隐藏的项目打开。</p>
+<img src="/2021/01/13/jottings-1/3.jpg" class="">
+<h3 id="第四步：输入命令git-add-所有的文件全部添加">第四步：输入命令git add .（所有的文件全部添加）</h3>
+<p>提交到缓存区<br>
+注：.可以是需要添加的文件名</p>
+<h3 id="第五步：输入命令git-commit-m-first-commit">第五步：输入命令git commit  -m  “first commit”</h3>
+<p>说明提交的项目的作用<br>
+注：“first commit”里面换成你需要</p>
+<h3 id="第六步：输入命令git-remote-add-origin-你的仓库地址">第六步：输入命令git remote add origin 你的仓库地址</h3>
+<p>连接仓库</p>
+<img src="/2021/01/13/jottings-1/5.jpg" class=""> 
+<h3 id="第七步：git-push-u-origin-master">第七步：git push -u origin master</h3>
+<p>上传至远程仓库</p>
+<img src="/2021/01/13/jottings-1/6.jpg" class="">
+<h3 id="效果">效果</h3>
+<img src="/2021/01/13/jottings-1/7.jpg" class="">
+<h3 id="遇到的问题">遇到的问题</h3>
+]]></content>
+      <tags>
+        <tag>-随笔 -技术</tag>
       </tags>
   </entry>
 </search>

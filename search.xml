@@ -215,7 +215,7 @@
 <h3 id="部署到远程站点">部署到远程站点</h3>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo d                          \\d是deploy</span><br></pre></td></tr></table></figure>
 <hr>
-<h2 id="获取任意网站的图标">获取任意网站的图标</h2>
+<h2 id="获取部分网站的图标">获取部分网站的图标</h2>
 <p><code>https://url/favicon.ico</code><br>
 eg:百度图标 <a href="https://www.baidu.com/favicon.ico">https://www.baidu.com/favicon.ico</a></p>
 <hr>
@@ -252,7 +252,8 @@ eg:百度图标 <a href="https://www.baidu.com/favicon.ico">https://www.baidu.co
 <h3 id="遇到的问题">遇到的问题</h3>
 ]]></content>
       <tags>
-        <tag>-随笔 -技术</tag>
+        <tag>随笔</tag>
+        <tag>技术</tag>
       </tags>
   </entry>
 </search>

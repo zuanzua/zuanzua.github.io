@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>Hello World</title>
-    <url>/hubertblog/2021/01/05/hello-world/</url>
+    <url>/2021/01/05/hello-world/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\hubertblog\assets\css\APlayer.min.css"><script src="\hubertblog\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\hubertblog\assets\js\Meting.min.js"></script><p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
 <h2 id="hello-mjl-你好">Hello mjl 你好</h2>
 <h2 id="quick-start">Quick Start</h2>
@@ -25,7 +25,7 @@
   </entry>
   <entry>
     <title>关于搭建博客的一系列问题</title>
-    <url>/hubertblog/2021/01/13/jottings-1/</url>
+    <url>/2021/01/13/jottings-1/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\hubertblog\assets\css\APlayer.min.css"><script src="\hubertblog\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\hubertblog\assets\js\Meting.min.js"></script><h2 id="bolg操作">bolg操作</h2>
 <h3 id="在sourse的-posts下创建-md">在sourse的-posts下创建 .md</h3>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo n <span class="string">&quot;filename&quot;</span></span><br></pre></td></tr></table></figure>
@@ -82,7 +82,7 @@ eg:百度图标 <a href="https://www.baidu.com/favicon.ico">https://www.baidu.co
   </entry>
   <entry>
     <title>私密</title>
-    <url>/hubertblog/2021/01/13/private/</url>
+    <url>/2021/01/13/private/</url>
     <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉, 这个密码看着不太对, 请再试试." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">
   <script id="hbeData" type="hbeData" data-hmacdigest="cfb1559427d0cf7dde2a1423091c93207b78e256594ea9150a53051f55127812">0201ff0e849979088ebc66e89713749ccb6a286cdaf622c4f00e08ed7515fbb4defb7843ce57961a6c32fde49865c5fa00f8508515dc9e4242deb20e041618576be2c17c4d5bb6affdcd083f2564b465ef15ebabd0219232d01eb27f1839c74dd1d17418e30758d9f95d3b41bf6cfa7395154096ba42766009ee87c1f5103aef093e6eb633bb3f32dab6323d3de41239f973f77fc16a6e16bf2036165f4cb4ccb4820010845138206b75484843eaa37804478ea85dd9a2ce0861d48c39c1eb4946a63e0eb7ae5026ed08a0431d8e7f200e35c0ce08c68a1b93ccf96d626b00e4e2c9e110a4ff6e4594b585423fc7104a29d2eba8c792840c993e0b54bc08e3d8510c26a057e8b237e3a03ff43dabc298013f1a173a52e88ad820184997c7b22e015c0a9f72adab91a299e47e119140f9f95f7ef5e478ad48316b12dc8e3f005991251aaf0c3d8737ec0569558538eefad0dd1ebf5770cec8c5295309d2532d8df29299b10121b6535b4d41b7360fb82c266064e072fa7112223511b38ecb125654c12e43f209e273892cdb11d3ed49765b906e83c3092834330b25cace04d65c05b5a6b7c40bb553d73c61d2442afecb</script>
   <div class="hbe hbe-content">
@@ -101,7 +101,7 @@ eg:百度图标 <a href="https://www.baidu.com/favicon.ico">https://www.baidu.co
   </entry>
   <entry>
     <title>示例</title>
-    <url>/hubertblog/2021/01/13/stencil/</url>
+    <url>/2021/01/13/stencil/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\hubertblog\assets\css\APlayer.min.css"><script src="\hubertblog\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\hubertblog\assets\js\Meting.min.js"></script>
         <div id="aplayer-dfLKJoOO" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;"></div>
 			  <script>

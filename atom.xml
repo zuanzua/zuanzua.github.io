@@ -3,11 +3,11 @@
   <title>Hubert&#39;s Blog</title>
   
   
-  <link href="https://zuanzua.github.io/atom.xml" rel="self"/>
+  <link href="https://ovohubert.gitee.io/zuanzua/atom.xml" rel="self"/>
   
-  <link href="https://zuanzua.github.io/"/>
+  <link href="https://ovohubert.gitee.io/zuanzua/"/>
   <updated>2021-01-13T16:14:50.589Z</updated>
-  <id>https://zuanzua.github.io/</id>
+  <id>https://ovohubert.gitee.io/zuanzua/</id>
   
   <author>
     <name>hubert</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>示例</title>
-    <link href="https://zuanzua.github.io/2021/01/13/stencil/"/>
-    <id>https://zuanzua.github.io/2021/01/13/stencil/</id>
+    <link href="https://ovohubert.gitee.io/zuanzua/2021/01/13/stencil/"/>
+    <id>https://ovohubert.gitee.io/zuanzua/2021/01/13/stencil/</id>
     <published>2021-01-13T14:28:45.000Z</published>
     <updated>2021-01-13T16:14:50.589Z</updated>
     
@@ -34,17 +34,17 @@
     
     
     
-    <category term="示例" scheme="https://zuanzua.github.io/categories/%E7%A4%BA%E4%BE%8B/"/>
+    <category term="示例" scheme="https://ovohubert.gitee.io/zuanzua/categories/%E7%A4%BA%E4%BE%8B/"/>
     
     
-    <category term="示例" scheme="https://zuanzua.github.io/tags/%E7%A4%BA%E4%BE%8B/"/>
+    <category term="示例" scheme="https://ovohubert.gitee.io/zuanzua/tags/%E7%A4%BA%E4%BE%8B/"/>
     
   </entry>
   
   <entry>
     <title>关于搭建博客的一系列问题</title>
-    <link href="https://zuanzua.github.io/2021/01/13/jottings-1/"/>
-    <id>https://zuanzua.github.io/2021/01/13/jottings-1/</id>
+    <link href="https://ovohubert.gitee.io/zuanzua/2021/01/13/jottings-1/"/>
+    <id>https://ovohubert.gitee.io/zuanzua/2021/01/13/jottings-1/</id>
     <published>2021-01-13T14:25:16.000Z</published>
     <updated>2021-01-19T07:23:05.570Z</updated>
     
@@ -56,16 +56,16 @@
     
     
     
-    <category term="随笔" scheme="https://zuanzua.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
+    <category term="随笔" scheme="https://ovohubert.gitee.io/zuanzua/tags/%E9%9A%8F%E7%AC%94/"/>
     
-    <category term="技术" scheme="https://zuanzua.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
+    <category term="技术" scheme="https://ovohubert.gitee.io/zuanzua/tags/%E6%8A%80%E6%9C%AF/"/>
     
   </entry>
   
   <entry>
     <title>私密</title>
-    <link href="https://zuanzua.github.io/2021/01/13/private/"/>
-    <id>https://zuanzua.github.io/2021/01/13/private/</id>
+    <link href="https://ovohubert.gitee.io/zuanzua/2021/01/13/private/"/>
+    <id>https://ovohubert.gitee.io/zuanzua/2021/01/13/private/</id>
     <published>2021-01-13T13:56:55.000Z</published>
     <updated>2021-01-16T09:39:16.110Z</updated>
     
@@ -75,14 +75,14 @@
     
     
     
-    <category term="私密" scheme="https://zuanzua.github.io/tags/%E7%A7%81%E5%AF%86/"/>
+    <category term="私密" scheme="https://ovohubert.gitee.io/zuanzua/tags/%E7%A7%81%E5%AF%86/"/>
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="https://zuanzua.github.io/2021/01/05/hello-world/"/>
-    <id>https://zuanzua.github.io/2021/01/05/hello-world/</id>
+    <link href="https://ovohubert.gitee.io/zuanzua/2021/01/05/hello-world/"/>
+    <id>https://ovohubert.gitee.io/zuanzua/2021/01/05/hello-world/</id>
     <published>2021-01-04T16:42:21.313Z</published>
     <updated>2021-01-13T14:54:14.345Z</updated>
     
@@ -98,7 +98,7 @@
     
     
     
-    <category term="学习" scheme="https://zuanzua.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
+    <category term="学习" scheme="https://ovohubert.gitee.io/zuanzua/tags/%E5%AD%A6%E4%B9%A0/"/>
     
   </entry>
   

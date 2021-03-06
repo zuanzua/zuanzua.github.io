@@ -6,7 +6,7 @@
   <link href="https://ovohubert.gitee.io/atom.xml" rel="self"/>
   
   <link href="https://ovohubert.gitee.io/"/>
-  <updated>2021-01-13T16:14:50.589Z</updated>
+  <updated>2021-03-06T13:25:24.745Z</updated>
   <id>https://ovohubert.gitee.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>蓝桥杯笔记</title>
+    <link href="https://ovohubert.gitee.io/2021/03/03/lanqiao/"/>
+    <id>https://ovohubert.gitee.io/2021/03/03/lanqiao/</id>
+    <published>2021-03-03T00:38:34.000Z</published>
+    <updated>2021-03-06T13:25:24.745Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;第十一届校内模拟真题&quot;&gt;第十一届校内模拟真题&lt;/h2&gt;
+&lt;h3 id=&quot;1-15-125gb&quot;&gt;1、15.125GB&lt;/h3&gt;
+&lt;h5 id=&quot;在计算机存储中-15-125gb是多少mb？&quot;&gt;在计算机存储中，15.125GB是多少MB？&lt;/h5&gt;
+&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(String[] args)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; &lt;span class=&quot;keyword&quot;&gt;double&lt;/span&gt; n = &lt;span class=&quot;number&quot;&gt;15.125&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; System.out.println((&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt;)(n*&lt;span class=&quot;number&quot;&gt;1024&lt;/span&gt;));  &lt;span class=&quot;comment&quot;&gt;//15488&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="技术" scheme="https://ovohubert.gitee.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="-蓝桥杯 -算法" scheme="https://ovohubert.gitee.io/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF-%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
   
   <entry>
     <title>示例</title>
@@ -46,7 +68,7 @@
     <link href="https://ovohubert.gitee.io/2021/01/13/jottings-1/"/>
     <id>https://ovohubert.gitee.io/2021/01/13/jottings-1/</id>
     <published>2021-01-13T14:25:16.000Z</published>
-    <updated>2021-01-19T07:23:05.570Z</updated>
+    <updated>2021-03-03T01:13:18.843Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;bolg操作&quot;&gt;bolg操作&lt;/h2&gt;
@@ -55,10 +77,12 @@
     
     
     
+    <category term="技术" scheme="https://ovohubert.gitee.io/categories/%E6%8A%80%E6%9C%AF/"/>
     
-    <category term="随笔" scheme="https://ovohubert.gitee.io/tags/%E9%9A%8F%E7%AC%94/"/>
     
     <category term="技术" scheme="https://ovohubert.gitee.io/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="博客" scheme="https://ovohubert.gitee.io/tags/%E5%8D%9A%E5%AE%A2/"/>
     
   </entry>
   

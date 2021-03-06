@@ -140,28 +140,6 @@ eg:百度图标 <a href="https://www.baidu.com/favicon.ico">https://www.baidu.co
       </tags>
   </entry>
   <entry>
-    <title>示例</title>
-    <url>/2021/01/13/stencil/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script>
-        <div id="aplayer-neLWiemN" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;"></div>
-			  <script>
-				  var options = {"narrow":false,"autoplay":false,"showlrc":3,"mode":"random","mutex":true,"theme":"#e6d0b2","preload":"metadata","listmaxheight":"513px","width":"50%","music":[{"title":"认真的雪","author":"薛之谦","url":"/resources/music/你还要我怎样.mp3","pic":"/resources/music/认真的雪.jpg","lrc":"认真的雪.lrc"}]};
-				  options.element = document.getElementById("aplayer-neLWiemN");
-				  var ap = new APlayer(options);
-			    window.aplayers || (window.aplayers = []);
-				  window.aplayers.push(ap);
-			  </script>
-<h2 id="就ssssssss">就ssssssss</h2>
-<h2 id="hello-world">Hello world!!!</h2>
-]]></content>
-      <categories>
-        <category>示例</category>
-      </categories>
-      <tags>
-        <tag>示例</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>私密</title>
     <url>/2021/01/13/private/</url>
     <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉, 这个密码看着不太对, 请再试试." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">
@@ -178,6 +156,28 @@ eg:百度图标 <a href="https://www.baidu.com/favicon.ico">https://www.baidu.co
 <script src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
       <tags>
         <tag>私密</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>示例</title>
+    <url>/2021/01/13/stencil/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script>
+        <div id="aplayer-zlQHEfkS" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;"></div>
+			  <script>
+				  var options = {"narrow":false,"autoplay":false,"showlrc":3,"mode":"random","mutex":true,"theme":"#e6d0b2","preload":"metadata","listmaxheight":"513px","width":"50%","music":[{"title":"认真的雪","author":"薛之谦","url":"/resources/music/你还要我怎样.mp3","pic":"/resources/music/认真的雪.jpg","lrc":"认真的雪.lrc"}]};
+				  options.element = document.getElementById("aplayer-zlQHEfkS");
+				  var ap = new APlayer(options);
+			    window.aplayers || (window.aplayers = []);
+				  window.aplayers.push(ap);
+			  </script>
+<h2 id="就ssssssss">就ssssssss</h2>
+<h2 id="hello-world">Hello world!!!</h2>
+]]></content>
+      <categories>
+        <category>示例</category>
+      </categories>
+      <tags>
+        <tag>示例</tag>
       </tags>
   </entry>
 </search>

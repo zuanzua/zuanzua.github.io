@@ -6,7 +6,7 @@
   <link href="https://zuanzua.github.io/atom.xml" rel="self"/>
   
   <link href="https://zuanzua.github.io/"/>
-  <updated>2021-03-06T13:25:24.745Z</updated>
+  <updated>2021-03-06T13:36:02.241Z</updated>
   <id>https://zuanzua.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://zuanzua.github.io/2021/03/03/lanqiao/"/>
     <id>https://zuanzua.github.io/2021/03/03/lanqiao/</id>
     <published>2021-03-03T00:38:34.000Z</published>
-    <updated>2021-03-06T13:25:24.745Z</updated>
+    <updated>2021-03-06T13:36:02.241Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;第十一届校内模拟真题&quot;&gt;第十一届校内模拟真题&lt;/h2&gt;
@@ -34,7 +34,9 @@
     <category term="技术" scheme="https://zuanzua.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-    <category term="-蓝桥杯 -算法" scheme="https://zuanzua.github.io/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF-%E7%AE%97%E6%B3%95/"/>
+    <category term="蓝桥杯" scheme="https://zuanzua.github.io/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
+    
+    <category term="算法" scheme="https://zuanzua.github.io/tags/%E7%AE%97%E6%B3%95/"/>
     
   </entry>
   

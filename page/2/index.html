@@ -26,6 +26,10 @@
 
   
   
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+  
+  
 
   
 <script>
@@ -40,7 +44,9 @@ var _hmt = _hmt || [];
 
 
 <link rel="alternate" href="/atom.xml" title="Hubert's Blog" type="application/atom+xml">
-<link href="https://cdn.bootcss.com/KaTeX/0.11.1/katex.min.css" rel="stylesheet" /></head>
+<link href="https://cdn.bootcss.com/KaTeX/0.11.1/katex.min.css" rel="stylesheet" /><link rel="stylesheet" href="\assets\css\APlayer.min.css" class="aplayer-style-marker">
+<script src="\assets\js\APlayer.min.js" class="aplayer-script-marker"></script>
+</head>
 
 </html>
 
@@ -152,7 +158,7 @@ var _hmt = _hmt || [];
     
     
     <article
-  id="post-hello-world"
+  id="post-jdbc"
   class="article article-type-post"
   itemscope
   itemprop="blogPost"
@@ -163,36 +169,30 @@ var _hmt = _hmt || [];
     <header class="article-header">
        
 <h2 itemprop="name">
-  <a class="article-title" href="/2021/01/05/hello-world/"
-    >Hello World</a> 
+  <a class="article-title" href="/2021/03/12/jdbc/"
+    >jdbc操作</a> 
 </h2>
  
 
     </header>
      
     <div class="article-meta">
-      <a href="/2021/01/05/hello-world/" class="article-date">
-  <time datetime="2021-01-04T16:42:21.313Z" itemprop="datePublished">2021-01-05</time>
-</a>    
+      <a href="/2021/03/12/jdbc/" class="article-date">
+  <time datetime="2021-03-12T11:26:05.000Z" itemprop="datePublished">2021-03-12</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a>
+  </div>
+   
     </div>
       
     <div class="article-entry" itemprop="articleBody">
        
-  <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="hello-mjl-你好">Hello mjl 你好</h2>
-<h2 id="quick-start">Quick Start</h2>
-<h3 id="create-a-new-post">Create a new post</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="run-server">Run server</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="generate-static-files">Generate static files</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="deploy-to-remote-sites">Deploy to remote sites</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+  <h2 id="jdbc与mysql">jdbc与Mysql</h2>
+<h3 id="连接数据库">连接数据库</h3>
+<h5 id="1-下载mysql驱动包">1、下载Mysql驱动包</h5>
+<p><a target="_blank" rel="noopener" href="https://dev.mysql.com/downloads/connector/j/">官网下载</a></p>
+<h5 id="2">2、</h5>
  
       <!-- reward -->
       
@@ -203,7 +203,187 @@ var _hmt = _hmt || [];
     
     <footer class="article-footer">
        
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%AD%A6%E4%B9%A0/" rel="tag">学习</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/java/" rel="tag">java</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%8A%80%E6%9C%AF/" rel="tag">技术</a></li></ul>
+
+    </footer>
+  </div>
+
+    
+ 
+    
+</article>
+
+    
+    <article
+  id="post-lanqiao"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2021/03/03/lanqiao/"
+    >蓝桥杯笔记</a> 
+</h2>
+ 
+
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2021/03/03/lanqiao/" class="article-date">
+  <time datetime="2021-03-03T00:38:34.000Z" itemprop="datePublished">2021-03-03</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a>
+  </div>
+   
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h2 id="第十一届校内模拟真题">第十一届校内模拟真题</h2>
+<h3 id="1-15-125gb">1、15.125GB</h3>
+<h5 id="在计算机存储中-15-125gb是多少mb？">在计算机存储中，15.125GB是多少MB？</h5>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line"> <span class="keyword">double</span> n = <span class="number">15.125</span>;</span><br><span class="line"> System.out.println((<span class="keyword">int</span>)(n*<span class="number">1024</span>));  <span class="comment">//15488</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure> 
+      <a class="article-more-link" href="/2021/03/03/lanqiao/"
+        >阅读更多...</a
+      >
+       
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/java/" rel="tag">java</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%AE%97%E6%B3%95/" rel="tag">算法</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/" rel="tag">蓝桥杯</a></li></ul>
+
+    </footer>
+  </div>
+
+    
+ 
+    
+</article>
+
+    
+    <article
+  id="post-stencil"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2021/01/13/stencil/"
+    >示例</a> 
+</h2>
+ 
+
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2021/01/13/stencil/" class="article-date">
+  <time datetime="2021-01-13T14:28:45.000Z" itemprop="datePublished">2021-01-13</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E7%A4%BA%E4%BE%8B/">示例</a>
+  </div>
+   
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  
+        <div id="aplayer-zlQHEfkS" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;"></div>
+			  <script>
+				  var options = {"narrow":false,"autoplay":false,"showlrc":3,"mode":"random","mutex":true,"theme":"#e6d0b2","preload":"metadata","listmaxheight":"513px","width":"50%","music":[{"title":"认真的雪","author":"薛之谦","url":"/resources/music/你还要我怎样.mp3","pic":"/resources/music/认真的雪.jpg","lrc":"认真的雪.lrc"}]};
+				  options.element = document.getElementById("aplayer-zlQHEfkS");
+				  var ap = new APlayer(options);
+			    window.aplayers || (window.aplayers = []);
+				  window.aplayers.push(ap);
+			  </script>
+<h2 id="就ssssssss">就ssssssss</h2>
+<h2 id="hello-world">Hello world!!!</h2>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%A4%BA%E4%BE%8B/" rel="tag">示例</a></li></ul>
+
+    </footer>
+  </div>
+
+    
+ 
+    
+</article>
+
+    
+    <article
+  id="post-jottings-1"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2021/01/13/jottings-1/"
+    >关于搭建博客的一系列问题</a> 
+</h2>
+ 
+
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2021/01/13/jottings-1/" class="article-date">
+  <time datetime="2021-01-13T14:25:16.000Z" itemprop="datePublished">2021-01-13</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a>
+  </div>
+   
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h2 id="bolg操作">bolg操作</h2>
+<h3 id="在sourse的-posts下创建-md">在sourse的-posts下创建 .md</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo n <span class="string">&quot;filename&quot;</span></span><br></pre></td></tr></table></figure> 
+      <a class="article-more-link" href="/2021/01/13/jottings-1/"
+        >阅读更多...</a
+      >
+       
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%8D%9A%E5%AE%A2/" rel="tag">博客</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%8A%80%E6%9C%AF/" rel="tag">技术</a></li></ul>
 
     </footer>
   </div>
@@ -220,7 +400,7 @@ var _hmt = _hmt || [];
   
   <nav class="page-nav">
     
-    <a class="extend prev" rel="prev" href="/">上一页</a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
+    <a class="extend prev" rel="prev" href="/">上一页</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/3/">下一页</a>
   </nav>
   
 </section>

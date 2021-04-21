@@ -6,7 +6,7 @@
   <link href="https://zuanzua.github.io/atom.xml" rel="self"/>
   
   <link href="https://zuanzua.github.io/"/>
-  <updated>2021-03-06T13:36:02.241Z</updated>
+  <updated>2021-04-21T13:10:29.316Z</updated>
   <id>https://zuanzua.github.io/</id>
   
   <author>
@@ -17,11 +17,136 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>使用AS时的问题</title>
+    <link href="https://zuanzua.github.io/2021/04/21/android_note/"/>
+    <id>https://zuanzua.github.io/2021/04/21/android_note/</id>
+    <published>2021-04-21T11:45:32.000Z</published>
+    <updated>2021-04-21T13:10:29.316Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;一-导入别人的android-studio项目-gradle版本不兼容问题&quot;&gt;一、导入别人的Android Studio项目，gradle版本不兼容问题&lt;/h2&gt;
+&lt;h5 id=&quot;1-修改android-gradle插件版本号&quot;&gt;1、修改android gradle插件版本号&lt;/h5&gt;
+&lt;p&gt;找到项目目录下的build.gradle&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="技术" scheme="https://zuanzua.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="android" scheme="https://zuanzua.github.io/tags/android/"/>
+    
+    <category term="笔记" scheme="https://zuanzua.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ListView和RecyclerView</title>
+    <link href="https://zuanzua.github.io/2021/04/11/android-2/"/>
+    <id>https://zuanzua.github.io/2021/04/11/android-2/</id>
+    <published>2021-04-11T13:05:32.000Z</published>
+    <updated>2021-04-21T13:11:09.567Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;一-listview的用法&quot;&gt;一、ListView的用法&lt;/h2&gt;
+&lt;h6 id=&quot;1-在布局中添加一个listview来存放后面添加的内容&quot;&gt;1、在布局中添加一个ListView来存放后面添加的内容&lt;/h6&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;?xml version&amp;#x3D;&amp;quot;1.0&amp;quot; encoding&amp;#x3D;&amp;quot;utf-8&amp;quot;?&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;LinearLayout xmlns:android&amp;#x3D;&amp;quot;http:&amp;#x2F;&amp;#x2F;schemas.android.com&amp;#x2F;apk&amp;#x2F;res&amp;#x2F;android&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    xmlns:tools&amp;#x3D;&amp;quot;http:&amp;#x2F;&amp;#x2F;schemas.android.com&amp;#x2F;tools&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    android:id&amp;#x3D;&amp;quot;@+id&amp;#x2F;activity_main&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    android:layout_width&amp;#x3D;&amp;quot;match_parent&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    android:layout_height&amp;#x3D;&amp;quot;match_parent&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    tools:context&amp;#x3D;&amp;quot;cn.edu.bu.a13lab07.MainActivity&amp;quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;ListView&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        android:layout_width&amp;#x3D;&amp;quot;match_parent&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        android:layout_height&amp;#x3D;&amp;quot;match_parent&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        android:id&amp;#x3D;&amp;quot;@+id&amp;#x2F;list_view&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;&amp;#x2F;ListView&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;&amp;#x2F;LinearLayout&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="技术" scheme="https://zuanzua.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="android" scheme="https://zuanzua.github.io/tags/android/"/>
+    
+    <category term="笔记" scheme="https://zuanzua.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>安卓常见的几种布局</title>
+    <link href="https://zuanzua.github.io/2021/04/10/android-1/"/>
+    <id>https://zuanzua.github.io/2021/04/10/android-1/</id>
+    <published>2021-04-10T07:54:32.000Z</published>
+    <updated>2021-04-21T13:10:46.946Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;1-线性布局-linearlayout&quot;&gt;1、线性布局(LinearLayout)&lt;/h2&gt;
+&lt;h5 id=&quot;线性布局-linearlayout-：按照垂直或者水平方向布局的组件&quot;&gt;线性布局（LinearLayout）：按照垂直或者水平方向布局的组件&lt;/h5&gt;
+&lt;p&gt;属性1：android:orientation    指定线性布局的方向（水平或者垂直）&lt;/p&gt;
+&lt;p&gt;属性2：android:width             线性布局的容器宽度&lt;/p&gt;
+&lt;p&gt;属性3：android:height           线性布局的容器高度&lt;/p&gt;
+&lt;p&gt;属性4：android:background  线性布局的背景&lt;/p&gt;
+&lt;p&gt;属性5：android:gravity          线性布局中，子容器相对于父容器所在的位置&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="技术" scheme="https://zuanzua.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="android" scheme="https://zuanzua.github.io/tags/android/"/>
+    
+    <category term="笔记" scheme="https://zuanzua.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Log4j2使用</title>
+    <link href="https://zuanzua.github.io/2021/03/18/Log4j2/"/>
+    <id>https://zuanzua.github.io/2021/03/18/Log4j2/</id>
+    <published>2021-03-18T02:38:34.000Z</published>
+    <updated>2021-03-18T01:34:52.665Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="技术" scheme="https://zuanzua.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="应用" scheme="https://zuanzua.github.io/tags/%E5%BA%94%E7%94%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>jdbc操作</title>
+    <link href="https://zuanzua.github.io/2021/03/12/jdbc/"/>
+    <id>https://zuanzua.github.io/2021/03/12/jdbc/</id>
+    <published>2021-03-12T11:26:05.000Z</published>
+    <updated>2021-03-12T14:03:31.931Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="技术" scheme="https://zuanzua.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="技术" scheme="https://zuanzua.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="java" scheme="https://zuanzua.github.io/tags/java/"/>
+    
+  </entry>
+  
+  <entry>
     <title>蓝桥杯笔记</title>
     <link href="https://zuanzua.github.io/2021/03/03/lanqiao/"/>
     <id>https://zuanzua.github.io/2021/03/03/lanqiao/</id>
     <published>2021-03-03T00:38:34.000Z</published>
-    <updated>2021-03-06T13:36:02.241Z</updated>
+    <updated>2021-03-12T11:27:47.081Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;第十一届校内模拟真题&quot;&gt;第十一届校内模拟真题&lt;/h2&gt;
@@ -37,6 +162,8 @@
     <category term="蓝桥杯" scheme="https://zuanzua.github.io/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
     
     <category term="算法" scheme="https://zuanzua.github.io/tags/%E7%AE%97%E6%B3%95/"/>
+    
+    <category term="java" scheme="https://zuanzua.github.io/tags/java/"/>
     
   </entry>
   

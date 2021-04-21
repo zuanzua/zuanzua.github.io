@@ -9,7 +9,7 @@
     
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <title>
-    关于搭建博客的一系列问题 |  Hubert&#39;s Blog
+    安卓常见的几种布局 |  Hubert&#39;s Blog
   </title>
   <meta name="generator" content="hexo-theme-ayer">
   
@@ -55,7 +55,7 @@ var _hmt = _hmt || [];
     <main class="content on">
       <section class="outer">
   <article
-  id="post-jottings-1"
+  id="post-android-1"
   class="article article-type-post"
   itemscope
   itemprop="blogPost"
@@ -66,15 +66,15 @@ var _hmt = _hmt || [];
     <header class="article-header">
        
 <h1 class="article-title sea-center" style="border-left:0" itemprop="name">
-  关于搭建博客的一系列问题
+  安卓常见的几种布局
 </h1>
  
 
     </header>
      
     <div class="article-meta">
-      <a href="/2021/01/13/jottings-1/" class="article-date">
-  <time datetime="2021-01-13T14:25:16.000Z" itemprop="datePublished">2021-01-13</time>
+      <a href="/2021/04/10/android-1/" class="article-date">
+  <time datetime="2021-04-10T07:54:32.000Z" itemprop="datePublished">2021-04-10</time>
 </a> 
   <div class="article-category">
     <a class="article-category-link" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a>
@@ -85,7 +85,7 @@ var _hmt = _hmt || [];
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> 字数统计:</span>
-            <span class="post-count">511</span>
+            <span class="post-count">1.9k</span>
         </span>
     </span>
 
@@ -94,7 +94,7 @@ var _hmt = _hmt || [];
         <span class="post-meta-item-icon">
             <i class="ri-book-open-line"></i>
             <span class="post-meta-item-text"> 阅读时长≈</span>
-            <span class="post-count">2 分钟</span>
+            <span class="post-count">7 分钟</span>
         </span>
     </span>
 </div>
@@ -109,56 +109,284 @@ var _hmt = _hmt || [];
   
     <div class="article-entry" itemprop="articleBody">
        
-  <h2 id="bolg操作">bolg操作</h2>
-<h3 id="在sourse的-posts下创建-md">在sourse的-posts下创建 .md</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo n <span class="string">&quot;filename&quot;</span></span><br></pre></td></tr></table></figure>
+  <h2 id="1-线性布局-linearlayout">1、线性布局(LinearLayout)</h2>
+<h5 id="线性布局-linearlayout-：按照垂直或者水平方向布局的组件">线性布局（LinearLayout）：按照垂直或者水平方向布局的组件</h5>
+<p>属性1：android:orientation    指定线性布局的方向（水平或者垂直）</p>
+<p>属性2：android:width             线性布局的容器宽度</p>
+<p>属性3：android:height           线性布局的容器高度</p>
+<p>属性4：android:background  线性布局的背景</p>
+<p>属性5：android:gravity          线性布局中，子容器相对于父容器所在的位置</p>
 <a id="more"></a>
-<h3 id="在sourse下建一个文件-默认有index-md">在sourse下建一个文件(默认有index .md)</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo n page <span class="string">&quot;filename&quot;</span></span><br></pre></td></tr></table></figure>
-<h3 id="在本地运行服务器">在本地运行服务器</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo s                          \\http://localhost:4000/ s是server</span><br><span class="line">hexo s -p 5555                  \\http://localhost:5555/</span><br></pre></td></tr></table></figure>
-<h3 id="生成静态文件">生成静态文件</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g                          \\g是generate</span><br></pre></td></tr></table></figure>
-<h3 id="部署到远程站点">部署到远程站点</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d                          \\d是deploy</span><br></pre></td></tr></table></figure>
-<hr>
-<h2 id="获取部分网站的图标">获取部分网站的图标</h2>
-<p><code>https://url/favicon.ico</code><br>
-eg:百度图标 <a target="_blank" rel="noopener" href="https://www.baidu.com/favicon.ico">https://www.baidu.com/favicon.ico</a></p>
-<hr>
-<h2 id="博客本地图片无法引用问题">博客本地图片无法引用问题</h2>
-<h3 id="一-：打开博客下的-config-yml文件修改成如下">（一）：打开博客下的_config.yml文件修改成如下</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">post_asset_folder: <span class="literal">true</span></span><br><span class="line">//原默认为post_asset_folder: <span class="literal">false</span></span><br></pre></td></tr></table></figure>
-<p>修改为true后，在使用<code>hexo n &quot;filename&quot;</code>建立文件时，Hexo会自动建立一个与文章同名的文件夹，这样就可以把与该文章相关的所有资源（图片）都放到那个文件夹里方便后面引用。</p>
-<h3 id="二-：正确的引用图片方式是使用下列的标签插件而不是-markdown">（二）：正确的引用图片方式是使用下列的标签插件而不是 markdown</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&#123;% asset_img example.jpg This is an example image %&#125; </span><br><span class="line">\\example.jpg就是要引用的图片，后面的This is an example image是图片描述，可以自己修改</span><br></pre></td></tr></table></figure>
-<hr>
-<h2 id="本地项目上传到github">本地项目上传到Github</h2>
-<h3 id="第一步：在自己的github上创建一个仓库">第一步：在自己的github上创建一个仓库</h3>
-<img src="/2021/01/13/jottings-1/1.jpg" class=""> 
-<img src="/2021/01/13/jottings-1/4.jpg" class=""> 
-<h3 id="第二步：在要上传的项目右键选择git-bash-here">第二步：在要上传的项目右键选择Git Bash Here</h3>
-<img src="/2021/01/13/jottings-1/2.jpg" class="">
-<h3 id="第三步：输入命令git-init">第三步：输入命令git init</h3>
-<p>把这个文件夹变成Git可管理的仓库，这时你会发现qwer里面多了个.git文件夹，它是Git用来跟踪和管理版本库的。如果你看不到，是因为它默认是隐藏文件，需要在查看中把隐藏的项目打开。</p>
-<img src="/2021/01/13/jottings-1/3.jpg" class="">
-<h3 id="第四步：输入命令git-add-所有的文件全部添加">第四步：输入命令git add .（所有的文件全部添加）</h3>
-<p>提交到缓存区<br>
-注：.可以是需要添加的文件名</p>
-<h3 id="第五步：输入命令git-commit-m-first-commit">第五步：输入命令git commit  -m  “first commit”</h3>
-<p>说明提交的项目的作用<br>
-注：“first commit”里面换成你需要</p>
-<h3 id="第六步：输入命令git-remote-add-origin-你的仓库地址">第六步：输入命令git remote add origin 你的仓库地址</h3>
-<p>连接仓库</p>
-<img src="/2021/01/13/jottings-1/5.jpg" class=""> 
-<h3 id="第七步：git-push-u-origin-master">第七步：git push -u origin master</h3>
-<p>上传至远程仓库</p>
-<img src="/2021/01/13/jottings-1/6.jpg" class="">
-<h3 id="效果">效果</h3>
-<img src="/2021/01/13/jottings-1/7.jpg" class="">
-<h2 id="备选主题">备选主题</h2>
-<p>主题：<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next">NexT.Pisces</a><br>
-<a target="_blank" rel="noopener" href="https://sherlockgy.github.io/">效果</a></p>
+<ul>
+<li>
+<p>1属性值：</p>
+<p>android:orientation=“horizontal”           指定线性布局方向：水平</p>
+<p>android:orientation=“vertical”               指定线性布局方向：垂直</p>
+</li>
+<li>
+<p>2.属性值：</p>
+<p>android:width=“xxxdp”                          指定线性布局的容器宽度为：xxxdp</p>
+<p>android:width=“wrap_content”             指定线性布局的容器宽度为：根据容器内容宽度大小来填充屏幕宽度</p>
+<p>android:width=“match_parent”             指定线性布局的容器宽度为：撑满整个屏幕宽度</p>
+</li>
+<li>
+<p>3.属性值：</p>
+<p>android:height=“xxxdp”                          指定线性布局的容器高度为：xxxdp</p>
+<p>android:height=“wrap_content”             指定线性布局的容器高度为：根据容器内容高度大小来填充屏幕高度</p>
+<p>android:height=“match_parent”             指定线性布局的容器高度为：撑满整个屏幕高度</p>
+</li>
+<li>
+<p>4.属性值：</p>
+<p>android:background=&quot;#000&quot;                  指定线性布局的背景为：黑色（rgb颜色）</p>
+<p>android:background=&quot;@android:color/black&quot;   指定线性布局的背景为：黑色（引用android系统自带的原始黑色）</p>
+<p>andrid:background=&quot;@color/colorPrimary&quot;   指定线性布局的背景为：（根据res/color.xml 中的colorPrimary所定义的颜色设置）</p>
+</li>
+<li>
+<p>5属性值：</p>
+<p>android:gravity=“center”      指定线性布局中，子容器相对于父容器所在的位置为：正中心</p>
+<p>android:gravity=“cente_verticalr”      指定线性布局中，子容器相对于父容器所在的位置为：垂直方向的正中心</p>
+<p>android:gravity=“center_horizontal”      指定线性布局中，子容器相对于父容器所在的位置为：水平方向的正中心</p>
+<p>android:gravity=“left”      指定线性布局中，子容器相对于父容器所在的位置为：最左边（默认）</p>
+<p>android:gravity=“right”      指定线性布局中，子容器相对于父容器所在的位置为：最右边</p>
+<p>android:gravity=“top”      指定线性布局中，子容器相对于父容器所在的位置为：最上方(默认)</p>
+<p>android:gravity=“bottom”      指定线性布局中，子容器相对于父容器所在的位置为：最下方</p>
+</li>
+</ul>
+<h2 id="2-相对布局-relativelayout">2、相对布局(RelativeLayout)</h2>
+<h5 id="相对布局-relativelayout-：相对其它组件的布局方式">相对布局（RelativeLayout）：相对其它组件的布局方式</h5>
+<ul>
+<li>第一类属性 属性值为true或者false</li>
+</ul>
+<p>android：layout_centerHrizontal 水平居中</p>
+<p>android：layout_centerVertical 垂直居中</p>
+<p>android：layout_centerInparent 相对于父控件完全居中</p>
+<p>android：layout_alignParentBottom 贴紧父控件的下边缘</p>
+<p>android：layout_alignParentLeft 贴紧父控件的左边缘</p>
+<p>android：layout_alignParentRight 贴紧父控件的右边缘</p>
+<p>android：layout_alignParentTop 贴紧父控件的上边缘</p>
+<p>android：layout_alignWithParentIfMissing 如果对应的兄弟控件找不到的话，就以父控件作为参照物</p>
+<ul>
+<li>第二类属性 属性值必须为id的引用名“@id/id-name”</li>
+</ul>
+<p>android：layout_below 在某控件下方</p>
+<p>android：layout_above 在某控件上方</p>
+<p>android：layout_toLeftOf 在某控件的左边</p>
+<p>android：layout_toRightOf 在某控件的右边</p>
+<p>android：layout_alignTop 本控件的上边缘和某控件的上边缘对齐</p>
+<p>android：layout_alignLeft 本控件的左边缘和某控件的左边缘对齐</p>
+<p>android：layout_alignBottom 本控件的下边缘和某控件的下控件对齐</p>
+<p>android：layout_alignRight 本控件的右边缘和某控件的有边缘对齐</p>
+<ul>
+<li>第三类：属性值为具体的像素值，如30dip，40px</li>
+</ul>
+<p>android：layout_marginBottom 离某控件底边缘的距离</p>
+<p>android：layout_marginLeft 离某控件左边缘的距离</p>
+<p>android：layout_marginRight 离某控件右边缘的距离</p>
+<p>android：layout_marginTop 离某控件上边缘的距离</p>
+<p>EditText的android：hint</p>
+<h2 id="3-绝对布局-absolutelayout">3、绝对布局（AbsoluteLayout）</h2>
+<h5 id="绝对布局-absolutelayout-：按照绝对坐标来布局组件">绝对布局（AbsoluteLayout）：按照绝对坐标来布局组件</h5>
+<ul>
+<li>控制大小:</li>
+</ul>
+<p>android:layout_width:组件宽度 android:layout_height:组件高度</p>
+<ul>
+<li>控制位置:<br>
+android:layout_x:设置组件的X坐标 android:layout_y:设置组件的Y坐标</li>
+</ul>
+<h2 id="4-帧布局">4、帧布局</h2>
+<h5 id="帧布局-framelayout-：组件从屏幕左上方布局组件">帧布局（FrameLayout）：组件从屏幕左上方布局组件</h5>
+<p>前景图像:永远处于帧布局最上面,直接面对用户的图像,就是不会被覆盖的图片。</p>
+<ul>
+<li>**android:foreground:***设置改帧布局容器的前景图像</li>
+<li>**android:foregroundGravity:**设置前景图像显示的位置</li>
+</ul>
+<h2 id="5-表格布局">5、表格布局</h2>
+<h5 id="tablelayout-是一种可以制作表格的布局-它和-gridlayout-的区别是-gridlayout-只能制定每一列宽度一样的表格布局-而-tablelayout-能够制定各列宽度不一样的表格布局">TableLayout 是一种可以制作表格的布局，它和 GridLayout 的区别是 GridLayout 只能制定每一列宽度一样的表格布局，而 TableLayout 能够制定各列宽度不一样的表格布局</h5>
+<p>TableLayout 的主要属性</p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>android:collapseColumns</td>
+<td>设置需要 <strong>被隐藏</strong> 的列的序号</td>
+</tr>
+<tr>
+<td>android:shrinkColumns</td>
+<td>设置允许 <strong>被收缩</strong> 的列的列序号</td>
+</tr>
+<tr>
+<td>android:stretchColumns</td>
+<td>设置运行 <strong>被拉伸</strong> 的列的列序号</td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li>这三个属性的列号都是 <strong>从0开始算</strong> 的,比如 <code>shrinkColunmns = &quot;2&quot;</code> 对应的是第三列</li>
+<li>可以 <strong>设置多个</strong> ,用 <strong>逗号(,)隔开</strong> 比如&quot;0,2&quot;, 如果是所有列 <strong>都生效</strong> ,则 <strong>用&quot;*&quot;号</strong></li>
+<li>TableLayout 里面的子控件可以为 TableRow 或者其它 View，但是其子控件的 <code>android:layout_width</code> 属性被系统固定为 <code>match_parent</code></li>
+<li>TableLayout 里面所有行中某一列的宽度的最大值是这一列的宽度</li>
+</ol>
+<p>还有两个属性,分别就是跳过格子以及合并单元格</p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>android:layout_column=“2”</td>
+<td>表示的就是 <strong>跳过</strong> 第二个,直接显示到第三个格子处,从1开始算的</td>
+</tr>
+<tr>
+<td>android:layout_span=“4”</td>
+<td>表示 <strong>合并</strong> 4个单元格,也就说这个组件占4个单元格</td>
+</tr>
+</tbody>
+</table>
+<p>TableRow 子控件的主要属性</p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>android:layout_column=“1”</td>
+<td>该控件显示在第1列</td>
+</tr>
+<tr>
+<td>android:layout_span=“2”</td>
+<td>该控件占据2列</td>
+</tr>
+</tbody>
+</table>
+<p>TableLayout 中的行数与列数</p>
+<ol>
+<li>
+<p>如果我们往 TableLayout 中添加组件的话,那么这个组件将占满一行</p>
+</li>
+<li>
+<p>如果要在一行上添加多个组件,就要添加一个 TableRow 的容器,把组件都丢到里面</p>
+</li>
+<li>
+<p>TableRow 中的组件个数就决定了该行有多少列,而列的宽度由该列中最宽的单元格决定</p>
+</li>
+<li>
+<p>TableRow <code>layout_width</code> 属性,默认是 <code>fill_parent</code> 的,设置成其它的值也不会生效</p>
+<p>但是 <code>layout_height</code> 默认是 <code>wrapten-content</code> 的,可以自己设置大小</p>
+</li>
+<li>
+<p>整个表格布局的宽度取决于父容器的宽度(占满父容器本身)</p>
+</li>
+<li>
+<p>有多少行就要自己数啦,一个tablerow一行,一个单独的组件也一行！多少列则是看 TableRow 中 的组件个数,组件最多的就是 TableLayout 的列数</p>
+</li>
+</ol>
+<h2 id="6-网格布局">6、网格布局</h2>
+<h5 id="gridlayout-网格布局">GridLayout ( 网格布局 )</h5>
+<ol>
+<li>
+<p>可以自己设置布局中组件的排列方式</p>
+</li>
+<li>
+<p>可以自定义网格布局有多少行,多少列</p>
+</li>
+<li>
+<p>可以直接设置组件位于某行某列</p>
+</li>
+<li>
+<p>可以设置组件横跨几行或者几列</p>
+</li>
+</ol>
+<p>设置排列方式</p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>android:orientation</td>
+<td>设置子组件的排列方式，值可以是 vertical 竖直，（默认） horizontal 水平</td>
+</tr>
+<tr>
+<td>android:gravity</td>
+<td>设置子组件的排列方式，值可以是 center 居中 left 靠左 right 靠右 bottom 底部… 如果想要同时使用两种，可以用 <code>left|bottom</code></td>
+</tr>
+</tbody>
+</table>
+<p>设置几行几列</p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>android:rowCount</td>
+<td>设置网格布局有几行</td>
+</tr>
+<tr>
+<td>android:columnCount</td>
+<td>设置网格布局有几列</td>
+</tr>
+</tbody>
+</table>
+<p>设置组件所在的行或列</p>
+<blockquote>
+<p><strong>注意：</strong> 行列从 0 开始计算，比如第一行是 0 ，第二行是 1</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>android:layout_row</td>
+<td>设置组件位于第几行</td>
+</tr>
+<tr>
+<td>android:layout_column</td>
+<td>设置组件位于第几列</td>
+</tr>
+</tbody>
+</table>
+<p>设置组件跨几行几列</p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>android:layout_rowSpan</td>
+<td>设置组件跨几行</td>
+</tr>
+<tr>
+<td>android:layout_columnSpan</td>
+<td>设置组件跨几列</td>
+</tr>
+</tbody>
+</table>
  
       <!-- reward -->
       
@@ -211,12 +439,12 @@ eg:百度图标 <a target="_blank" rel="noopener" href="https://www.baidu.com/fa
     <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://zuanzua.github.io/2021/01/13/jottings-1/" alt="微信分享二维码">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://zuanzua.github.io/2021/04/10/android-1/" alt="微信分享二维码">
     </div>
 </div>
 
 <div id="share-mask"></div>  
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%8D%9A%E5%AE%A2/" rel="tag">博客</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%8A%80%E6%9C%AF/" rel="tag">技术</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/android/" rel="tag">android</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%AC%94%E8%AE%B0/" rel="tag">笔记</a></li></ul>
 
     </footer>
   </div>
@@ -224,19 +452,19 @@ eg:百度图标 <a target="_blank" rel="noopener" href="https://www.baidu.com/fa
    
   <nav class="article-nav">
     
-      <a href="/2021/01/13/stencil/" class="article-nav-link">
+      <a href="/2021/04/11/android-2/" class="article-nav-link">
         <strong class="article-nav-caption">上一篇</strong>
         <div class="article-nav-title">
           
-            示例
+            ListView和RecyclerView
           
         </div>
       </a>
     
     
-      <a href="/2021/01/13/private/" class="article-nav-link">
+      <a href="/2021/03/18/Log4j2/" class="article-nav-link">
         <strong class="article-nav-caption">下一篇</strong>
-        <div class="article-nav-title">私密</div>
+        <div class="article-nav-title">Log4j2使用</div>
       </a>
     
   </nav>

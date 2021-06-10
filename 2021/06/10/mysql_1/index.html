@@ -9,7 +9,7 @@
     
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <title>
-    Hello World |  Hubert&#39;s Blog
+    mysql的命令行操作 |  Hubert&#39;s Blog
   </title>
   <meta name="generator" content="hexo-theme-ayer">
   
@@ -55,7 +55,7 @@ var _hmt = _hmt || [];
     <main class="content on">
       <section class="outer">
   <article
-  id="post-hello-world"
+  id="post-mysql_1"
   class="article article-type-post"
   itemscope
   itemprop="blogPost"
@@ -66,22 +66,26 @@ var _hmt = _hmt || [];
     <header class="article-header">
        
 <h1 class="article-title sea-center" style="border-left:0" itemprop="name">
-  Hello World
+  mysql的命令行操作
 </h1>
  
 
     </header>
      
     <div class="article-meta">
-      <a href="/2021/01/05/hello-world/" class="article-date">
-  <time datetime="2021-01-04T16:42:21.313Z" itemprop="datePublished">2021-01-05</time>
-</a>   
+      <a href="/2021/06/10/mysql_1/" class="article-date">
+  <time datetime="2021-06-10T08:38:34.000Z" itemprop="datePublished">2021-06-10</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a>
+  </div>
+  
 <div class="word_count">
     <span class="post-time">
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> 字数统计:</span>
-            <span class="post-count">84</span>
+            <span class="post-count">231</span>
         </span>
     </span>
 
@@ -105,46 +109,59 @@ var _hmt = _hmt || [];
   
     <div class="article-entry" itemprop="articleBody">
        
-  <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="hello-mjl-你好">Hello mjl 你好</h2>
-<h2 id="quick-start">Quick Start</h2>
-<h3 id="create-a-new-post">Create a new post</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="run-server">Run server</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="generate-static-files">Generate static files</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="deploy-to-remote-sites">Deploy to remote sites</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+  <h5 id="一：登录mysql">一：登录mysql</h5>
+<p><code>mysql -h地址 -p端口 -u用户名 -p密码</code><br>
+-h和-p可以不写</p>
+<img src="/2021/06/10/mysql_1/mysql_1.jpg" class="">
+<a id="more"></a>
+<h5 id="二：查看数据库">二：查看数据库</h5>
+<p><code>show databases;   注：一定要加上;</code></p>
+<img src="/2021/06/10/mysql_1/mysql_2.jpg" class="">
+<h5 id="三：查看指定数据库里面的表">三：查看指定数据库里面的表</h5>
+<p><code>show tables from 数据库名;</code></p>
+<img src="/2021/06/10/mysql_1/mysql_3.jpg" class="">
+<h5 id="四：查看表内的字段">四：查看表内的字段</h5>
+<p><code>show columns from 表名;</code><br>
+<code>describle 表名;</code></p>
+<img src="/2021/06/10/mysql_1/mysql_4.jpg" class="">
+<h5 id="五-查看表内数据">五、查看表内数据</h5>
+<p><strong>增删查改</strong></p>
+<ul>
+<li>增：insert</li>
+<li>删：delete</li>
+<li>查：select或show</li>
+<li>改：update</li>
+</ul>
+<h5 id="六-创建数据库">六、创建数据库</h5>
+<p><code>create database 数据库名；</code></p>
+<img src="/2021/06/10/mysql_1/mysql_5.jpg" class="">
+<h5 id="七-在指定的数据库中创建数据库表">七、在指定的数据库中创建数据库表</h5>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">use 数据库名；</span><br><span class="line">create table 表名(字段信息);</span><br></pre></td></tr></table></figure>
+<img src="/2021/06/10/mysql_1/mysql_6.jpg" class="">
+<h5 id="八-清空表">八、清空表</h5>
+<p><code>delete table 表名;</code><br>
+<code>truncate 表名;</code></p>
+<img src="/2021/06/10/mysql_1/mysql_7.jpg" class="">
+<p>truncate与delete区别：truncate是先按照原数据表结构复制了一份空数据表再删除原表，而delete是数据连同结构一起清空。</p>
+<h5 id="九-删除表">九、删除表</h5>
+<p><code>drop table 表名;</code></p>
+<img src="/2021/06/10/mysql_1/mysql_8.jpg" class="">
+<h5 id="十-重名名表">十、重名名表</h5>
+<p><code>rename table 原表名 to 新表名；</code></p>
+<img src="/2021/06/10/mysql_1/mysql_9.jpg" class="">
+<h5 id="十一-删除数据库">十一、删除数据库</h5>
+<p><code>drop database 数据库名</code></p>
+<img src="/2021/06/10/mysql_1/mysql_10.jpg" class="">
+<h5 id="十二-查看各类命令">十二、查看各类命令</h5>
+<p><code>help</code></p>
+<img src="/2021/06/10/mysql_1/mysql_11.jpg" class="">
  
       <!-- reward -->
-      
-      <div id="reword-out">
-        <div id="reward-btn">
-          打赏
-        </div>
-      </div>
       
     </div>
     
 
     <!-- copyright -->
-    
-    <div class="declare">
-      <ul class="post-copyright">
-        <li>
-          <i class="ri-copyright-line"></i>
-          <strong>版权声明： </strong>
-          
-          本博客所有文章除特别声明外，著作权归作者所有。转载请注明出处！
-          
-        </li>
-      </ul>
-    </div>
     
     <footer class="article-footer">
        
@@ -190,12 +207,12 @@ var _hmt = _hmt || [];
     <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://zuanzua.github.io/2021/01/05/hello-world/" alt="微信分享二维码">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://zuanzua.github.io/2021/06/10/mysql_1/" alt="微信分享二维码">
     </div>
 </div>
 
 <div id="share-mask"></div>  
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%AD%A6%E4%B9%A0/" rel="tag">学习</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/mysql/" rel="tag">mysql</a></li></ul>
 
     </footer>
   </div>
@@ -203,15 +220,11 @@ var _hmt = _hmt || [];
    
   <nav class="article-nav">
     
-      <a href="/2021/01/13/private/" class="article-nav-link">
-        <strong class="article-nav-caption">上一篇</strong>
-        <div class="article-nav-title">
-          
-            私密
-          
-        </div>
-      </a>
     
+      <a href="/2021/06/09/asp.net_1/" class="article-nav-link">
+        <strong class="article-nav-caption">下一篇</strong>
+        <div class="article-nav-title">ASP.NET搭建服务器</div>
+      </a>
     
   </nav>
 
